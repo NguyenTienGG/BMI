@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="BMI Calculartor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/heightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Weight"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/weightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultsTV"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/healthyTV"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+
+</LinearLayout>
